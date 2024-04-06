@@ -1,6 +1,6 @@
 This project implements a user interface based on a Figma design using ReactJS and Vanilla CSS.
 
-![Image description](Screenshot 2024-04-07 005151.png)
+![Image description](./Screenshot%202024-04-07%20005151.png)
 
 
 Project Setup:
