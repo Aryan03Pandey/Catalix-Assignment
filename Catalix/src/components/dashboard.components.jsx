@@ -1,3 +1,5 @@
+import BottomStats from "./bottomStats.components";
+import MiddleStats from "./middleStats.components";
 import TextField from "./textField.components";
 import TopStats from "./topStats.components";
 import UserControls from "./userControls.components";
@@ -18,13 +20,9 @@ const Dashboard = () => {
 
                 <TopStats />
 
-                <div className="middleStats">
+                <MiddleStats />
 
-                </div>
-
-                <div className="lowerStats">
-
-                </div>
+                <BottomStats />
 
             </div>
         </div>
