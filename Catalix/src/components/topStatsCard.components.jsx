@@ -1,5 +1,21 @@
-const TopStatsCard = ({ path, title, subTitle, figure, arrow, base, percentage, currencyAmt, currency, bgClass }) => {
+import {
+    ResponsiveContainer,
+    AreaChart,
+    XAxis,
+    YAxis,
+    Area,
+    Tooltip,
+    CartesianGrid
+} from "recharts";
+
+import { Link } from "react-router-dom";
+
+import Chart from "./charts";
+
+const TopStatsCard = ({ data, title, subTitle, figure, arrow, base, percentage, currencyAmt, currency, bgClass, stroke, fill }) => {
+    
     return (
+        <Link to="/stats">
         <div className={"quotation " + bgClass}>
             <h1 className="title">{title}</h1>
             <h3 className="subtitle">{subTitle}</h3>
@@ -14,8 +30,10 @@ const TopStatsCard = ({ path, title, subTitle, figure, arrow, base, percentage, 
 
             <p className="currencyAmt">{currencyAmt + " " + currency}</p>
 
-            <img src={path} alt="" className="path" />
+            {/* <img src={path} alt="" className="path" /> */}
+            <Chart info={data} stroke={stroke} fill={fill} />
         </div>
+        </Link>
     )
 }
 

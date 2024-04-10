@@ -1,22 +1,20 @@
 
 import './App.css'
-import Sidebar from './components/sidebar.components'
-import Dashboard from './components/dashboard.components'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Statistics from './pages/statistics';
+
+import data from "./data/chart1.json"
+import MainPage from './pages/mainPage';
 
 function App() {
 
   return (
-    <section className='mainPage'>
-      
-      {/* Side Navigation Panel */}
-      
-      <Sidebar />
-
-      {/* Dashboard Panel */}
-
-      <Dashboard />
-      
-    </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/stats' element={<Statistics data={data["data"]} />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

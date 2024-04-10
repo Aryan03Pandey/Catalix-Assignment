@@ -8,13 +8,16 @@ import up from "../assets/climbing.svg"
 import upBlack from "../assets/upBlack.svg"
 import down from "../assets/falling.svg"
 
+import data from "../data/chart1.json"
+
 const TopStats = () => {
     
 
     return (
         <div className="topStats">
             <TopStatsCard 
-                path={path1}
+                // path={path1}
+                data={data}
                 title="efficiency"
                 subTitle="Lorem Ipsum"
                 figure="1.1921"
@@ -24,10 +27,13 @@ const TopStats = () => {
                 currencyAmt="0.00"
                 currency="USD"
                 bgClass="card1"
+                stroke="#539BBB"
+                fill="#83b4db"
             />
-
+            
             <TopStatsCard 
-                path={path2}
+                // path={path2}
+                data={data}
                 title="time to market"
                 subTitle="Lorem Ipsum"
                 figure="327,176"
@@ -37,10 +43,13 @@ const TopStats = () => {
                 currencyAmt="131,040,723,108"
                 currency="JPY"
                 bgClass="card2"
+                stroke="#16b4f7"
+                fill="#055f59"
             />
             
             <TopStatsCard 
-                path={path3}
+                // path={path3}
+                data={data}
                 title="tech debt"
                 subTitle="Lorem Ipsum"
                 figure="1.1763"
@@ -50,11 +59,14 @@ const TopStats = () => {
                 currencyAmt="0.00"
                 currency="USD"
                 bgClass="card3"
+                stroke="#ffa6a8"
+                fill="#ffe1e3"
             />
             
             
             <TopStatsCard 
-                 path={path4}
+                //  path={path4}
+                data={data}
                  title="predictability"
                  subTitle="Lorem Ipsum"
                  figure="0.00313010"
@@ -64,6 +76,8 @@ const TopStats = () => {
                  currencyAmt="1,566"
                  currency="BTC"
                  bgClass="card4"
+                stroke="#de373a"
+                fill="#ee4346"
             />
         </div>
     )
