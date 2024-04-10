@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Statistics from './pages/statistics';
 
 import data from "./data/chart1.json"
+
 import MainPage from './pages/mainPage';
 
 function App() {

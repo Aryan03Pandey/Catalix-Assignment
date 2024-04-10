@@ -9,6 +9,9 @@ import upBlack from "../assets/upBlack.svg"
 import down from "../assets/falling.svg"
 
 import data from "../data/chart1.json"
+import data1 from "../data/chart2.json"
+import data2 from "../data/chart3.json"
+import data3 from "../data/chart4.json"
 
 const TopStats = () => {
     
@@ -33,7 +36,7 @@ const TopStats = () => {
             
             <TopStatsCard 
                 // path={path2}
-                data={data}
+                data={data1}
                 title="time to market"
                 subTitle="Lorem Ipsum"
                 figure="327,176"
@@ -49,7 +52,7 @@ const TopStats = () => {
             
             <TopStatsCard 
                 // path={path3}
-                data={data}
+                data={data2}
                 title="tech debt"
                 subTitle="Lorem Ipsum"
                 figure="1.1763"
@@ -66,7 +69,7 @@ const TopStats = () => {
             
             <TopStatsCard 
                 //  path={path4}
-                data={data}
+                data={data3}
                  title="predictability"
                  subTitle="Lorem Ipsum"
                  figure="0.00313010"
