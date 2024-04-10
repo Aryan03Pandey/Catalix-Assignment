@@ -42,7 +42,7 @@ const Statistics = ({ data }) => {
               tickLine={false}
               tickFormatter={(str) => {
                 const date = parseISO(str);
-                if (date.getDate() % 7 === 0) {
+                if (date.getDate() % 3 === 0) {
                   return format(date, "MMM, d");
                 }
                 return "";
